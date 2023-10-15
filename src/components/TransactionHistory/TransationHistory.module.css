@@ -1,0 +1,10 @@
+.transaction_history {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
