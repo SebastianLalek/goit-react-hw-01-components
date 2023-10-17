@@ -1,6 +1,8 @@
 .transaction_history {
   border-collapse: collapse;
   text-align: center;
+  width: 600px;
+  font-size: 18px;
 }
 
 table th,
