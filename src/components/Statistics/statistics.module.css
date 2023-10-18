@@ -11,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.stat_list {
+.stat-list {
   display: flex;
   gap: 20px;
   list-style: none;

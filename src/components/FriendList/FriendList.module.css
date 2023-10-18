@@ -5,7 +5,6 @@
 
 .item {
   display: flex;
-  /* gap: 10px; */
   width: 250px;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 3px;
