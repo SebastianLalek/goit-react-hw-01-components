@@ -5,21 +5,21 @@ import PropTypes from 'prop-types';
 export default function FriendList({ friends }) {
   return (
     <ul className={css.friend_list}>
-      {friends.map(({ avatar, name, isOnline, id }) => (
+      {friends.map(friend => (
         <FriendListItem
-          avatar={avatar}
-          name={name}
-          isOnline={isOnline}
-          id={id}
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+          key={friend.id}
         />
       ))}
     </ul>
   );
 }
 
-function FriendListItem({ avatar, name, isOnline, id }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li key={id} className={css.item}>
+    <li className={css.item}>
       {isOnline ? (
         <span className={css.online}></span>
       ) : (
@@ -39,5 +39,4 @@ FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };
